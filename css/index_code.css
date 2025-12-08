@@ -1,0 +1,10 @@
+div.center_button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+hr.blank{
+    border: None;
+    height: 10px;
+}

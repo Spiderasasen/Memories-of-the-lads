@@ -1,0 +1,12 @@
+body{
+    background-color: #445650;
+    color: white;
+    font-family: cursive;
+}
+
+div.center_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
