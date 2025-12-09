@@ -35,6 +35,7 @@ submit.addEventListener("click", () =>{
     //if code is 1109, Semaj
     if (input.value === "1109"){
         console.log("Semaj's logs")
+        window.location.href = "People's_Logs/Semaj/Semaj_Home_Page.html"
     }
     //auto clear
     input.value = "";
