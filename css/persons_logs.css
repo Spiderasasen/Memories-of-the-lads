@@ -44,8 +44,8 @@ div.item p{
 
 .media-item video,
 .media-item img {
-    width: 250px;
-    max-width: 200px;
+    width: 100%;
+    max-width: 350px;
 }
 
 /*main wrapper for both divs*/

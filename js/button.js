@@ -2,6 +2,7 @@ const input = document.getElementById("input");
 const buttons = document.querySelectorAll("button[data-value]")
 const submit = document.getElementById("Submit");
 const clear = document.getElementById("Clear");
+const wrongMessage = document.getElementById("wrong_password");
 
 //for indivual buttons clicked, it goes into the input bar
 buttons.forEach(button => {
@@ -29,13 +30,17 @@ submit.addEventListener("click", () =>{
         console.log("MASTER KEY")
     }
     //if code is 2004, Diego
-    if (input.value === "2004"){
+    else if (input.value === "2004"){
         console.log("Diego's logs")
     }
     //if code is 1109, Semaj
-    if (input.value === "1109"){
+    else if (input.value === "1109"){
         console.log("Semaj's logs")
         window.location.href = "People's_Logs/Semaj/Semaj_Home_Page.html"
+    }
+    else{
+        console.log("wrong password")
+        wrongMessage.innerHTML = "<p style='color: red;'>Please enter a valid password</p>";
     }
     //auto clear
     input.value = "";
