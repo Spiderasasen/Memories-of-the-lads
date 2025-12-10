@@ -34,7 +34,7 @@ submit.addEventListener("click", () =>{
         console.log("Diego's logs")
     }
     //if code is 1109, Semaj
-    else if (input.value === "1109"){
+    else if (input.value === "1106"){
         console.log("Semaj's logs")
         window.location.href = "People's_Logs/Semaj/Semaj_Home_Page.html"
     }
