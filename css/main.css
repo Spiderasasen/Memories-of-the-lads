@@ -14,3 +14,11 @@ hr.blank{
     border: None;
     height: 10px;
 }
+.zoomable {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+.zoomable.zoomed {
+    transform: scale(2); /* zoom factor */
+    cursor: zoom-out;
+}
