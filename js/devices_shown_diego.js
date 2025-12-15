@@ -2,6 +2,7 @@
 const phone = document.getElementById("Phone");
 const smart_jorunal = document.getElementById("Smart_Journal");
 const all_devices = document.getElementById("all_devices");
+const phone_sad = document.getElementById("Phone_sad");
 //getting all the elements in the data values
 const medias = document.querySelectorAll("div[data-value]")
 
@@ -25,6 +26,20 @@ smart_jorunal.addEventListener("click", () =>{
     medias.forEach(media => {
         console.log(media);
         if (media.dataset.value !== "Smart_Journal") {
+            media.style.display = "none";
+        }
+        else{
+            media.style.display = "block";
+        }
+    });
+});
+
+//sad phone section
+phone_sad.addEventListener("click", () =>{
+    console.log(phone_sad, " clicked");
+    medias.forEach(media => {
+        console.log(media);
+        if (media.dataset.value !== "Phone_sad") {
             media.style.display = "none";
         }
         else{
